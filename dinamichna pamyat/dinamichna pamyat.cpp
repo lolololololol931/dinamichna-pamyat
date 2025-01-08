@@ -56,5 +56,6 @@ int main()
 		cout << res1[i] << " ";
 	}
 	cout << endl;*/
+
 }
 
