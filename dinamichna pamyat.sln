@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dinamichna pamyat", "dinamichna pamyat\dinamichna pamyat.vcxproj", "{383D8B11-3E21-47B9-B55F-6CA5C53DA7D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{383D8B11-3E21-47B9-B55F-6CA5C53DA7D5}.Debug|x64.ActiveCfg = Debug|x64
+		{383D8B11-3E21-47B9-B55F-6CA5C53DA7D5}.Debug|x64.Build.0 = Debug|x64
+		{383D8B11-3E21-47B9-B55F-6CA5C53DA7D5}.Debug|x86.ActiveCfg = Debug|Win32
+		{383D8B11-3E21-47B9-B55F-6CA5C53DA7D5}.Debug|x86.Build.0 = Debug|Win32
+		{383D8B11-3E21-47B9-B55F-6CA5C53DA7D5}.Release|x64.ActiveCfg = Release|x64
+		{383D8B11-3E21-47B9-B55F-6CA5C53DA7D5}.Release|x64.Build.0 = Release|x64
+		{383D8B11-3E21-47B9-B55F-6CA5C53DA7D5}.Release|x86.ActiveCfg = Release|Win32
+		{383D8B11-3E21-47B9-B55F-6CA5C53DA7D5}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3ADD3E66-4F9E-45C5-B333-5B81CF7E0877}
+	EndGlobalSection
+EndGlobal
