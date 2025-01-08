@@ -47,6 +47,21 @@ int unique(const int* A, int M, const int* B, int N, int* res) {
 	return index;
 }
 
+//n3
+int merge(const int* A, int M, const int* B, int N, int* res) {
+	int index = 0;
+	for (int i = 0; i < M; ++i) {
+		if (!existing(res, index, A[i])) {
+			res[index++] = A[i];
+		}
+	}
+	for (int i = 0; i < N; ++i) {
+		if (!existing(res, index, B[i])) {
+			res[index++] = B[i];
+		}
+	}
+	return index; 
+}
 
 
 int main()
@@ -71,6 +86,7 @@ int main()
 		cout << res1[i] << " ";
 	}
 	cout << endl;*/
+	/*delete[] res1;*/
 
 	//n2
 	/*int* res2 = new int[M + N];
@@ -79,7 +95,20 @@ int main()
 		cout << res2[i] << " ";
 	}
 	cout << endl;*/
+	//delete[] res2;
 
+	//n3
+	int* res3 = new int[M + N];
+	int size3 = merge(A, M, B, N, res3);
+	for (int i = 0; i < size3; ++i) {
+		cout << res3[i] << " ";
+	}
+	cout << endl;
+	delete[] A;
+	delete[] B;
+	delete[] res3;
+
+	return 0;
 
 }
 
