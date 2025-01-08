@@ -31,6 +31,21 @@ int inputA(const int* A,int M,const int* B,int N, int* res){
 	return index;
 }
 
+//n2
+int unique(const int* A, int M, const int* B, int N, int* res) {
+	int index = 0;
+	for (int i = 0; i < M; i++) {
+		if (!existing(B, N, A[i]) && !existing(res, index, A[i])) {
+			res[index++] = A[i];
+		}
+	}
+	for (int i = 0; i < N; i++) {
+		if (!existing(A, M, B[i]) && !existing(res, index, B[i])) {
+			res[index++] = B[i];
+		}
+	}
+	return index;
+}
 
 
 
@@ -54,6 +69,14 @@ int main()
 	int size1 = inputA(A, M, B, N, res1);
 	for (int i = 0; i < size1; i++) {
 		cout << res1[i] << " ";
+	}
+	cout << endl;*/
+
+	//n2
+	/*int* res2 = new int[M + N];
+	int size2 = unique(A, M, B, N, res2);
+	for (int i = 0; i < size2; ++i) {
+		cout << res2[i] << " ";
 	}
 	cout << endl;*/
 
